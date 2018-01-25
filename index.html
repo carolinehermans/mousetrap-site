@@ -1,0 +1,19 @@
+<head>
+  <link rel="stylesheet" href="./main.css"></link>
+</head>
+<script>
+  window.DOMContentLoaded = function() {
+    let img = new Image()
+    img.src="website.png"
+    img.onload = function() {
+      document.getElementById("after-load").style.display = "block"
+    }
+  }
+</script>
+<body>
+  <div id="after-load">
+    <img src="website.png"/>
+  </div>
+  <div id="before-load">
+  </div>
+</body>
